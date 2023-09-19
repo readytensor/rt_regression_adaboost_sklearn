@@ -1,0 +1,5 @@
+{
+  "n_estimators": 70,
+  "learning_rate": 0.5,
+  "loss": "linear"
+}
