@@ -85,7 +85,17 @@ class RegressionSchema:
         Returns:
             str: The format of the input data (e.g., CSV, JSON, etc.).
         """
-        return self.schema["inputDataFormat"]["type"]
+        return self.schema["inputDataFormat"]
+
+    @property
+    def encoding(self) -> str:
+        """
+        Gets the encoding of the input data.
+
+        Returns:
+            str: The encoding of the input data (e.g., "utf-8", "iso-8859-1", etc.).
+        """
+        return self.schema["encoding"]
 
     @property
     def encoding(self) -> str:
