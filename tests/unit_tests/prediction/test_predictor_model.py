@@ -80,7 +80,7 @@ def test_fit_predict_evaluate(regressor, synthetic_data):
 
     score = regressor.evaluate(test_X, test_y)
     assert isinstance(score, float)
-    assert 0 <= score <= 1
+    assert score <= 1
 
 
 def test_save_load(tmpdir, regressor, synthetic_data, hyperparameters):
@@ -215,4 +215,4 @@ def test_evaluate_predictor_model(synthetic_data, hyperparameters):
     score = evaluate_predictor_model(regressor, test_X, test_y)
 
     assert isinstance(score, float)
-    assert 0 <= score <= 1  # can be < 0, but that shouldnt happen either
+    assert score <= 1  # can be < 0 since we are generating random data

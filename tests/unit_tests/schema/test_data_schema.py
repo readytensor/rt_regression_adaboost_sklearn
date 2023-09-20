@@ -24,10 +24,8 @@ def test_init():
         "title": "Test Title",
         "description": "Test description",
         "schemaVersion": 1.0,
-        "inputDataFormat": {
-            "type": "CSV",
-            "encoding": "utf-8",
-        },
+        "inputDataFormat": "CSV",
+        "encoding": "utf-8",
         "id": {"name": "Test ID"},
         "target": {"name": "Test Target", "example": 3},
         "features": [{"name": "Test feature", "dataType": "NUMERIC", "nullable": True}],
@@ -64,10 +62,8 @@ def test_get_allowed_values_for_categorical_feature():
         "title": "Test Title",
         "description": "Test description",
         "schemaVersion": 1.0,
-        "inputDataFormat": {
-            "type": "CSV",
-            "encoding": "utf-8",
-        },
+        "inputDataFormat": "CSV",
+        "encoding": "utf-8",
         "id": {"name": "Test ID"},
         "target": {"name": "Test Target", "example": 42},
         "features": [
@@ -106,10 +102,8 @@ def test_get_example_value_for_numeric_feature():
         "title": "Test Title",
         "description": "Test description",
         "schemaVersion": 1.0,
-        "inputDataFormat": {
-            "type": "CSV",
-            "encoding": "utf-8",
-        },
+        "inputDataFormat": "CSV",
+        "encoding": "utf-8",
         "id": {"name": "Test ID"},
         "target": {"name": "Test Target", "example": 42},
         "features": [
@@ -153,10 +147,8 @@ def test_get_description_for_id_target_and_features():
         "title": "Test Title",
         "description": "Test description",
         "schemaVersion": 1.0,
-        "inputDataFormat": {
-            "type": "CSV",
-            "encoding": "utf-8",
-        },
+        "inputDataFormat": "CSV",
+        "encoding": "utf-8",
         "id": {"name": "Test ID", "description": "ID field"},
         "target": {
             "name": "Test Target",
@@ -211,10 +203,8 @@ def test_is_feature_nullable():
         "title": "Test Title",
         "description": "Test description",
         "schemaVersion": 1.0,
-        "inputDataFormat": {
-            "type": "CSV",
-            "encoding": "utf-8",
-        },
+        "inputDataFormat": "CSV",
+        "encoding": "utf-8",
         "id": {"name": "Test ID", "nullable": False},
         "target": {"name": "Test Target", "example": 42},
         "features": [

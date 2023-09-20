@@ -97,16 +97,6 @@ class RegressionSchema:
         """
         return self.schema["encoding"]
 
-    @property
-    def encoding(self) -> str:
-        """
-        Gets the encoding to use for the input data.
-
-        Returns:
-            str: The encoding of the input data (e.g., "utf-8", "ISO-8859-1, etc.).
-        """
-        return self.schema["inputDataFormat"]["encoding"]
-
     def _get_features(self) -> Tuple[List[str], List[str]]:
         """
         Returns the feature names of numeric and categorical data types.
